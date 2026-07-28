@@ -1,0 +1,64 @@
+/* basic Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* navbar */
+.navbar {
+  background-color: #050505;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 35px;
+  margin: 0;
+}
+
+.active {
+  background-color: #1B9AAA;
+}
+
+/* left and right groups of links */
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* links styling */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 16px;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+}
+
+.navbar a:hover {
+  background-color: rgba(23, 125, 209, 0.63);
+  border-radius: 6px;
+}
+
+/* center logo */
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+.icon {
+  font-style: normal;
+  font-size: 20px;
+}
+
