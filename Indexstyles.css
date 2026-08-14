@@ -118,6 +118,9 @@ body, html {
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background: rgb(66, 66, 66);
+    border-bottom:1px solid #000;
+
 }
 .topbartoppartbitthingy h2{
     font-size:30px;
@@ -135,5 +138,8 @@ body, html {
     padding:8px 40px;
     background: #1B9AAA;
     color: white;
-
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
 }
