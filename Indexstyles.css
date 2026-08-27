@@ -1,4 +1,8 @@
-/* basic Reset */
+ @font-face {
+    font-family: 'Blackhan';
+    src: url('Black_Han_Sans/BlackHanSans-Regular.ttf') format('truetype');
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -108,7 +112,7 @@ body, html {
 }
 .card:hover{
     box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    transform: translateY(-5px);
+    transform: translateY(-5px);      
     transition: all 0.3s ease;
     background:#1B9AAA;
     border:1px solid #000;
@@ -126,6 +130,11 @@ body, html {
     font-size:30px;
     margin-left:6%;
     color:white;
+    font-family: 'Blackhan';
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    
 }
 .login{
     display:flex;
@@ -142,4 +151,43 @@ body, html {
     cursor: pointer;
     font-size: 25px;
     font-weight: bold;
+    border-radius: 10px;
+}
+
+.bet-table-box{
+    display:block;
+    gap:25px;
+    margin-left:6%;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 2px 6px grey;
+    width: 58.7%; 
+    transition: all 0.3s ease;
+}
+
+.bet-table-box:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);      
+    transition: all 0.3s ease;
+    background:#1B9AAA;
+    border:1px solid #000;
+    color:white;
+}
+
+.bet-table{
+    background:white;
+    color:#000;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+    border-collapse:collapse;
+    width:100%;
+}
+.bet-table th,
+.bet-table td{
+    padding:12px;
+    text-align:left;
+    border-bottom:1px solid #ccc;
 }
