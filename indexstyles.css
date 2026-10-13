@@ -167,7 +167,7 @@ body, html {
 .bet-table-box{
     display:block;
     gap:25px;
-    margin-left:6%;
+    margin-left:4.5%;
     background:white;
     border:1px solid #ddd;
     border-radius:15px;
@@ -177,14 +177,7 @@ body, html {
     transition: all 0.3s ease;
 }
 
-.bet-table-box:hover{
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    transform: translateY(-5px);      
-    transition: all 0.3s ease;
-    background:#1B9AAA;
-    border:1px solid #000;
-    color:white;
-}
+
 
 .bet-table{
     background:white;
@@ -203,46 +196,7 @@ body, html {
     border-bottom:1px solid #ccc;
 }
 
-.account-card{
-    display:block;
-    gap:25px;
-    background:white;
-    border:1px solid #ddd;
-    border-radius:15px;
-    padding:20px;
-    box-shadow:0 2px 6px grey;
-    width: 29%;
-    height: 450px;
-    margin-right:1.5%;
-    transition: all 0.3s ease;
-}
 
-.account-card:hover{
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    transform: translateY(-5px);      
-    transition: all 0.3s ease;
-    background:#1B9AAA;
-    border:1px solid #000;
-    color:white;
-}
-
-.login2{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-right:4%;
-}
-
-.login2 button{
-    padding:8px 44%;
-    background: white;
-    color: black;
-    border: 1px solid #000;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 10px;
-}
 
 
 
@@ -254,113 +208,160 @@ body, html {
     margin-left:3%;
     border-radius:15px;
     box-shadow:0 2px 6px grey;
-    width: 97%; 
+    width: 97%;
 }
-.leftbox{
+
+.create-bet{
     display:block;
     gap:25px;
-    margin-left:6%;
+    margin-top:0.5%;
+    margin-right:2%;
+    margin-left:20px;
     background:white;
     border:1px solid #ddd;
     border-radius:15px;
     padding:20px;
     box-shadow:0 2px 6px grey;
-    width: 6%; 
+    width: 40%;
 }
 
 
+
+.input-box {
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-box:focus {
+    border-color: #3498db;
+}
+
+.create-bet-button {
+    padding: 10px 20px;
+    background-color: #1B9AAA;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
 
 /*account page*/
-
-
-
-.profile-name {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    line-height: 1.9;
+.account-card {
+    display: block;
+    width: 90%;
+    margin: 6%;
+    margin-top: 2%;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #e2e6e8;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
-.profile-name button,
-.profile-edit {
-    border: none;
-    background: transparent;
-    font-size: 25px;
+.account-card-heading h2 {
+    margin: 0 0 6px;
+    font-size: 23px;
+}
+
+.account-card-heading p {
+    margin: 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.account-form-thingy {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #222;
+    background: #fafafa;
+    border: 1px solid #d8dfe2;
+    border-radius: 9px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form input:focus {
+    border-color: #1B9AAA;
+    box-shadow: 0 0 0 3px rgba(27, 154, 170, 0.15);
+    background: #fff;
+}
+
+.account-login,
+.account-signup {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
     cursor: pointer;
 }
 
-.profile-image {
-    background: #eee;
-    border-radius: 15px;
-    height: 15px;
-    width: 15px;
-}j
-
-.profile-edit {
-    display: block;
-    margin-left: auto;
-    margin-top: -80px;
-    margin-bottom: 15px;
-}
-
-.visibility {
-    display: flex;
-    background: #222;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 18px;
-}
-
-.visibility button {
-    flex: 1;
-    background: transparent;
+.account-login {
+    margin-top: 4px;
     color: white;
-    border: none;
-    padding: 8px 5px;
-    font-size: 10px;
+    background: #1B9AAA;
+    border: 1px solid #1B9AAA;
+    transition: all 0.3s ease;
 }
 
-.visibility button:hover {
-    background: #444;
-}
-
-.closing-bet {
-    border: 1.5px solid #075c75;
-    border-radius: 13px;
-    padding: 9px;
-    margin-top: 12px;
-}
-
-.closing-bet:hover{
+.account-login:hover {
     box-shadow:0 4px 12px rgba(0,0,0,0.2);
     transform: translateY(-5px);      
     transition: all 0.3s ease;
-    background:#1B9AAA;
-    border:1px solid #000;
-    color:white;
 }
 
-.bet-heading {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
+.account-signup {
+    color: #147d8a;
+    background: white;
+    border: 1px solid #1B9AAA;
+    transition: all 0.3s ease;
+}
+
+.account-signup:hover {
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);      
+    transition: all 0.3s ease;
+}
+
+.form-divider {
+    display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 12px;
+    color: #999;
+    font-size: 11px;
+    font-weight: 600;
 }
 
-.bet-heading strong {
-    font-size: 16px;
-}
 
-.bet-heading span {
-    font-size: 10px;
-}
-
-.bet-info {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    margin-top: 7px;
-    font-size: 10px;
-}
 
 
 
